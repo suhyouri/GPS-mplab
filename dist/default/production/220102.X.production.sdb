@@ -1,0 +1,400 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18325 ]
+[d frameptr 6 ]
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"9 /Users/suhyouri/MPLABXProjects/220102.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"88 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"132
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+"137
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+"142
+[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
+"151
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"173
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"206
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"225
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"251
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+"266
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"268
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"276
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"280
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"284
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"288
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"292
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"296
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"80
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"75 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.h
+[v _uartFlag uartFlag `VEa  1 e 1 0 ]
+"76
+[v _parserFlag parserFlag `VEa  1 e 1 0 ]
+"77
+[v _dollarFlag dollarFlag `VEa  1 e 1 0 ]
+"79
+[v _rxData rxData `VEuc  1 e 1 0 ]
+[s S170 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"365 /Applications/microchip/mplabx/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8/pic/include/proc/pic16f18325.h
+[u S175 . 1 `S170 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES175  1 e 1 @11 ]
+[s S204 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 BCL1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"535
+[u S213 . 1 `S204 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES213  1 e 1 @17 ]
+"1500
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1545
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S183 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 BCL1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1645
+[u S192 . 1 `S183 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES192  1 e 1 @145 ]
+"1876
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"2192
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2237
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2780
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2825
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2896
+[v _RC1REG RC1REG `VEuc  1 e 1 @409 ]
+"2950
+[v _TX1REG TX1REG `VEuc  1 e 1 @410 ]
+"3011
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @411 ]
+"3081
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
+"3135
+[v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
+[s S348 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3161
+[u S357 . 1 `S348 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES357  1 e 1 @413 ]
+"3315
+[v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
+[s S326 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3341
+[u S335 . 1 `S326 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES335  1 e 1 @414 ]
+"3495
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
+"3741
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3791
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5947
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"5992
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"6446
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"6491
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"6857
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"6907
+[v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
+"11576
+[v _PMD0 PMD0 `VEuc  1 e 1 @2321 ]
+"11621
+[v _PMD1 PMD1 `VEuc  1 e 1 @2322 ]
+"11683
+[v _PMD2 PMD2 `VEuc  1 e 1 @2323 ]
+"11723
+[v _PMD3 PMD3 `VEuc  1 e 1 @2324 ]
+"11785
+[v _PMD4 PMD4 `VEuc  1 e 1 @2325 ]
+"11819
+[v _PMD5 PMD5 `VEuc  1 e 1 @2326 ]
+"11928
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2329 ]
+"12068
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2331 ]
+"12165
+[v _OSCEN OSCEN `VEuc  1 e 1 @2333 ]
+"12211
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2334 ]
+"12269
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2335 ]
+"13323
+[v _RXPPS RXPPS `VEuc  1 e 1 @3620 ]
+"14183
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3748 ]
+"62 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[8]uc  1 e 8 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[1]uc  1 e 1 0 ]
+[s S260 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"70
+[u S265 . 1 `S260 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[1]S265  1 e 1 0 ]
+"71
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+"72
+[v _eusartRxLastError eusartRxLastError `VES265  1 e 1 0 ]
+"77
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"78
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"80
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"81
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"82
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"9 /Users/suhyouri/MPLABXProjects/220102.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"127
+[v main@i_511 i `i  1 a 2 44 ]
+"117
+[v main@i_510 i `i  1 a 2 42 ]
+"111
+[v main@i_509 i `i  1 a 2 40 ]
+"55
+[v main@i_508 i `i  1 a 2 38 ]
+"52
+[v main@i_507 i `i  1 a 2 36 ]
+"49
+[v main@i i `i  1 a 2 34 ]
+"28
+[v main@rx_long rx_long `VE[10]uc  1 a 10 24 ]
+"26
+[v main@rx_lat rx_lat `[9]uc  1 a 9 15 ]
+"25
+[v main@rx_time rx_time `[9]uc  1 a 9 6 ]
+"24
+[v main@rx_gps rx_gps `[6]uc  1 a 6 0 ]
+"31
+[v main@fpos fpos `VEuc  1 a 1 66 ]
+"36
+[v main@longpos longpos `VEuc  1 a 1 65 ]
+"34
+[v main@latpos latpos `VEuc  1 a 1 64 ]
+"33
+[v main@timepos timepos `VEuc  1 a 1 63 ]
+"21
+[v main@longSize longSize `VEuc  1 a 1 62 ]
+"19
+[v main@latSize latSize `VEuc  1 a 1 61 ]
+"18
+[v main@timeSize timeSize `VEuc  1 a 1 60 ]
+"37
+[v main@ewpos ewpos `VEuc  1 a 1 59 ]
+"35
+[v main@nspos nspos `VEuc  1 a 1 58 ]
+"17
+[v main@gnggaSize gnggaSize `VEuc  1 a 1 57 ]
+"45
+[v main@ew_go ew_go `VEa  1 a 1 56 ]
+"44
+[v main@ns_go ns_go `VEa  1 a 1 55 ]
+"43
+[v main@long_go long_go `VEa  1 a 1 54 ]
+"42
+[v main@lat_go lat_go `VEa  1 a 1 53 ]
+"41
+[v main@time_go time_go `VEa  1 a 1 52 ]
+"40
+[v main@g_ok g_ok `VEa  1 a 1 51 ]
+"32
+[v main@cpos cpos `VEuc  1 a 1 50 ]
+"29
+[v main@rx_ew rx_ew `VEuc  1 a 1 49 ]
+"27
+[v main@rx_ns rx_ns `VEuc  1 a 1 48 ]
+"22
+[v main@ewSize ewSize `VEuc  1 a 1 47 ]
+"20
+[v main@nsSize nsSize `VEuc  1 a 1 46 ]
+"47
+[v main@header_g header_g `DC[7]uc  1 s 7 header_g ]
+"211
+} 0
+"50 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"80
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"55 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"108
+} 0
+"60 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"88 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"130
+} 0
+"292
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"294
+} 0
+"296
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"298
+} 0
+"284
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"286
+} 0
+"280
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"282
+} 0
+"288
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 1 ]
+"290
+} 0
+"173
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 p 1 1 ]
+"194
+} 0
+"52 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"74
+} 0
+"206 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"223
+} 0
+"225
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"247
+} 0
+"268
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"274
+} 0
+"266
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"276
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"278
+} 0
+"251
+[v _EUSART_RxDataHandler EUSART_RxDataHandler `(v  1 e 1 0 ]
+{
+"264
+} 0
