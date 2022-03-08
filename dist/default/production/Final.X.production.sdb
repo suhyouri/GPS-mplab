@@ -11,16 +11,10 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"9 /Users/suhyouri/MPLABXProjects/220102.X/main.c
+"9 /Users/suhyouri/MPLABXProjects/Final.X/main.c
 [v _main main `(v  1 e 1 0 ]
-"88 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+"88 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
-"132
-[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
-"137
-[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
-"142
-[v _EUSART_is_tx_done EUSART_is_tx_done `(a  1 e 1 0 ]
 "151
 [v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
 "173
@@ -47,9 +41,9 @@
 [v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
 "296
 [v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
-"52 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/interrupt_manager.c
+"52 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+"50 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "60
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
@@ -57,9 +51,9 @@
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 "80
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/pin_manager.c
+"55 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"75 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.h
+"75 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/eusart.h
 [v _uartFlag uartFlag `VEa  1 e 1 0 ]
 "76
 [v _parserFlag parserFlag `VEa  1 e 1 0 ]
@@ -67,15 +61,15 @@
 [v _dollarFlag dollarFlag `VEa  1 e 1 0 ]
 "79
 [v _rxData rxData `VEuc  1 e 1 0 ]
-[s S170 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S309 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "365 /Applications/microchip/mplabx/v5.50/packs/Microchip/PIC16F1xxxx_DFP/1.7.146/xc8/pic/include/proc/pic16f18325.h
-[u S175 . 1 `S170 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES175  1 e 1 @11 ]
-[s S204 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S314 . 1 `S309 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES314  1 e 1 @11 ]
+[s S334 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 BCL1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -85,13 +79,13 @@
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "535
-[u S213 . 1 `S204 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES213  1 e 1 @17 ]
+[u S343 . 1 `S334 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES343  1 e 1 @17 ]
 "1500
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1545
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S183 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S35 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 BCL1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -101,8 +95,8 @@
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1645
-[u S192 . 1 `S183 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES192  1 e 1 @145 ]
+[u S44 . 1 `S35 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES44  1 e 1 @145 ]
 "1876
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "2192
@@ -123,7 +117,7 @@
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
 "3135
 [v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
-[s S348 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S133 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -133,11 +127,11 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "3161
-[u S357 . 1 `S348 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES357  1 e 1 @413 ]
+[u S142 . 1 `S133 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES142  1 e 1 @413 ]
 "3315
 [v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
-[s S326 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S111 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -147,8 +141,8 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "3341
-[u S335 . 1 `S326 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES335  1 e 1 @414 ]
+[u S120 . 1 `S111 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES120  1 e 1 @414 ]
 "3495
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
 "3741
@@ -193,7 +187,7 @@
 [v _RXPPS RXPPS `VEuc  1 e 1 @3620 ]
 "14183
 [v _RC4PPS RC4PPS `VEuc  1 e 1 @3748 ]
-"62 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+"62 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/eusart.c
 [v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
 "63
 [v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
@@ -207,18 +201,18 @@
 [v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
 "69
 [v _eusartRxBuffer eusartRxBuffer `VE[1]uc  1 e 1 0 ]
-[s S260 . 1 `uc 1 perr 1 0 :1:0 
+[s S22 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "70
-[u S265 . 1 `S260 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[1]S265  1 e 1 0 ]
+[u S27 . 1 `S22 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxStatusBuffer eusartRxStatusBuffer `VE[1]S27  1 e 1 0 ]
 "71
 [v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
 "72
-[v _eusartRxLastError eusartRxLastError `VES265  1 e 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES27  1 e 1 0 ]
 "77
 [v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
 "78
@@ -229,19 +223,17 @@
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "82
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"9 /Users/suhyouri/MPLABXProjects/220102.X/main.c
+"9 /Users/suhyouri/MPLABXProjects/Final.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "127
-[v main@i_511 i `i  1 a 2 44 ]
+[v main@i_432 i `i  1 a 2 42 ]
 "117
-[v main@i_510 i `i  1 a 2 42 ]
-"111
-[v main@i_509 i `i  1 a 2 40 ]
+[v main@i_431 i `i  1 a 2 40 ]
 "55
-[v main@i_508 i `i  1 a 2 38 ]
+[v main@i_430 i `i  1 a 2 38 ]
 "52
-[v main@i_507 i `i  1 a 2 36 ]
+[v main@i_429 i `i  1 a 2 36 ]
 "49
 [v main@i i `i  1 a 2 34 ]
 "28
@@ -253,52 +245,52 @@
 "24
 [v main@rx_gps rx_gps `[6]uc  1 a 6 0 ]
 "31
-[v main@fpos fpos `VEuc  1 a 1 66 ]
+[v main@fpos fpos `VEuc  1 a 1 64 ]
 "36
-[v main@longpos longpos `VEuc  1 a 1 65 ]
+[v main@longpos longpos `VEuc  1 a 1 63 ]
 "34
-[v main@latpos latpos `VEuc  1 a 1 64 ]
+[v main@latpos latpos `VEuc  1 a 1 62 ]
 "33
-[v main@timepos timepos `VEuc  1 a 1 63 ]
+[v main@timepos timepos `VEuc  1 a 1 61 ]
 "21
-[v main@longSize longSize `VEuc  1 a 1 62 ]
+[v main@longSize longSize `VEuc  1 a 1 60 ]
 "19
-[v main@latSize latSize `VEuc  1 a 1 61 ]
-"18
-[v main@timeSize timeSize `VEuc  1 a 1 60 ]
+[v main@latSize latSize `VEuc  1 a 1 59 ]
 "37
-[v main@ewpos ewpos `VEuc  1 a 1 59 ]
+[v main@ewpos ewpos `VEuc  1 a 1 58 ]
 "35
-[v main@nspos nspos `VEuc  1 a 1 58 ]
+[v main@nspos nspos `VEuc  1 a 1 57 ]
+"18
+[v main@timeSize timeSize `VEuc  1 a 1 56 ]
 "17
-[v main@gnggaSize gnggaSize `VEuc  1 a 1 57 ]
+[v main@gnggaSize gnggaSize `VEuc  1 a 1 55 ]
 "45
-[v main@ew_go ew_go `VEa  1 a 1 56 ]
+[v main@ew_go ew_go `VEa  1 a 1 54 ]
 "44
-[v main@ns_go ns_go `VEa  1 a 1 55 ]
+[v main@ns_go ns_go `VEa  1 a 1 53 ]
 "43
-[v main@long_go long_go `VEa  1 a 1 54 ]
+[v main@long_go long_go `VEa  1 a 1 52 ]
 "42
-[v main@lat_go lat_go `VEa  1 a 1 53 ]
+[v main@lat_go lat_go `VEa  1 a 1 51 ]
 "41
-[v main@time_go time_go `VEa  1 a 1 52 ]
+[v main@time_go time_go `VEa  1 a 1 50 ]
 "40
-[v main@g_ok g_ok `VEa  1 a 1 51 ]
+[v main@g_ok g_ok `VEa  1 a 1 49 ]
 "32
-[v main@cpos cpos `VEuc  1 a 1 50 ]
+[v main@cpos cpos `VEuc  1 a 1 48 ]
 "29
-[v main@rx_ew rx_ew `VEuc  1 a 1 49 ]
+[v main@rx_ew rx_ew `VEuc  1 a 1 47 ]
 "27
-[v main@rx_ns rx_ns `VEuc  1 a 1 48 ]
+[v main@rx_ns rx_ns `VEuc  1 a 1 46 ]
 "22
-[v main@ewSize ewSize `VEuc  1 a 1 47 ]
+[v main@ewSize ewSize `VEuc  1 a 1 45 ]
 "20
-[v main@nsSize nsSize `VEuc  1 a 1 46 ]
+[v main@nsSize nsSize `VEuc  1 a 1 44 ]
 "47
 [v main@header_g header_g `DC[7]uc  1 s 7 header_g ]
 "211
 } 0
-"50 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+"50 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "58
@@ -313,17 +305,17 @@
 {
 "94
 } 0
-"55 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/pin_manager.c
+"55 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "108
 } 0
-"60 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/mcc.c
+"60 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "72
 } 0
-"88 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+"88 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 {
 "130
@@ -361,15 +353,17 @@
 "173
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 {
-[v EUSART_Write@txData txData `uc  1 p 1 1 ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 2 ]
 "194
 } 0
-"52 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/interrupt_manager.c
+"52 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "74
 } 0
-"206 /Users/suhyouri/MPLABXProjects/220102.X/mcc_generated_files/eusart.c
+"206 /Users/suhyouri/MPLABXProjects/Final.X/mcc_generated_files/eusart.c
 [v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
 {
 "223

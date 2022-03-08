@@ -10590,9 +10590,9 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 102 "./mcc_generated_files/pin_manager.h"
+# 202 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 114 "./mcc_generated_files/pin_manager.h"
+# 214 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -10945,7 +10945,7 @@ void main(void)
     volatile _Bool ns_go = 0;
     volatile _Bool ew_go = 0;
 
-    const unsigned char header_g[] = {"$GNGGA"};
+    const unsigned char header_g[] = {"$GPGGA"};
 
     for(int i=0; i < latSize ; i++){
         rx_lat[i] = 0;
@@ -11009,11 +11009,11 @@ void main(void)
                     g_ok=0;
                     cpos = 0;
 
-     for(int i=0; i < timeSize ; i++){
-                        EUSART_Write(rx_time[i]);
-                    }
-                    EUSART_Write(10);
-     EUSART_Write(13);
+
+
+
+
+
 
      for(int i=0; i < latSize ; i++){
                         EUSART_Write(rx_lat[i]);

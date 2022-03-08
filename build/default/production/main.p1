@@ -1159,13 +1159,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _ew_go `Va ~T0 @X0 1 a ]
 [e = _ew_go -> -> 0 `i `a ]
 "47
-[; ;main.c: 47:     const unsigned char header_g[] = {"$GNGGA"};
+[; ;main.c: 47:     const unsigned char header_g[] = {"$GPGGA"};
 [v F6902 `Cuc ~T0 @X0 -> 7 `i s header_g ]
 [i F6902
 :U ..
 -> 36 `c
 -> 71 `c
--> 78 `c
+-> 80 `c
 -> 71 `c
 -> 71 `c
 -> 65 `c
@@ -1372,38 +1372,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "109
 [; ;main.c: 109:                     cpos = 0;
 [e = _cpos -> -> 0 `i `uc ]
-"111
-[; ;main.c: 111:      for(int i=0; i < timeSize ; i++){
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $U 963  ]
-[e :U 960 ]
-{
-"112
-[; ;main.c: 112:                         EUSART_Write(rx_time[i]);
-[e ( _EUSART_Write (1 *U + &U _rx_time * -> -> _i `ui `ux -> -> # *U &U _rx_time `ui `ux ]
-"113
-[; ;main.c: 113:                     }
-}
-[e ++ _i -> 1 `i ]
-[e :U 963 ]
-[e $ < _i -> _timeSize `i 960  ]
-[e :U 961 ]
-}
-"114
-[; ;main.c: 114:                     EUSART_Write(10);
-[e ( _EUSART_Write (1 -> -> 10 `i `uc ]
-"115
-[; ;main.c: 115:      EUSART_Write(13);
-[e ( _EUSART_Write (1 -> -> 13 `i `uc ]
 "117
 [; ;main.c: 117:      for(int i=0; i < latSize ; i++){
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 967  ]
-[e :U 964 ]
+[e $U 963  ]
+[e :U 960 ]
 {
 "118
 [; ;main.c: 118:                         EUSART_Write(rx_lat[i]);
@@ -1412,9 +1387,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 119:                     }
 }
 [e ++ _i -> 1 `i ]
-[e :U 967 ]
-[e $ < _i -> _latSize `i 964  ]
-[e :U 965 ]
+[e :U 963 ]
+[e $ < _i -> _latSize `i 960  ]
+[e :U 961 ]
 }
 "120
 [; ;main.c: 120:                     EUSART_Write(10);
@@ -1436,8 +1411,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 971  ]
-[e :U 968 ]
+[e $U 967  ]
+[e :U 964 ]
 {
 "128
 [; ;main.c: 128:                         EUSART_Write(rx_long[i]);
@@ -1446,9 +1421,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 129:      }
 }
 [e ++ _i -> 1 `i ]
-[e :U 971 ]
-[e $ < _i -> _longSize `i 968  ]
-[e :U 969 ]
+[e :U 967 ]
+[e $ < _i -> _longSize `i 964  ]
+[e :U 965 ]
 }
 "130
 [; ;main.c: 130:      EUSART_Write(10);
@@ -1470,7 +1445,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 952  ]
 "139
 [; ;main.c: 139:     default:
-[e :U 972 ]
+[e :U 968 ]
 "140
 [; ;main.c: 140:                 break;
 [e $U 952  ]
@@ -1485,19 +1460,19 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 4 `i 957
  , $ -> 5 `i 958
  , $ -> 6 `i 959
- 972 ]
+ 968 ]
 [e :U 952 ]
 "144
 [; ;main.c: 144:             if(time_go){
-[e $ ! != -> _time_go `i -> 0 `i 973  ]
+[e $ ! != -> _time_go `i -> 0 `i 969  ]
 {
 "145
 [; ;main.c: 145:                 if(rxData != ','){
-[e $ ! != -> _rxData `ui -> 44 `ui 974  ]
+[e $ ! != -> _rxData `ui -> 44 `ui 970  ]
 {
 "146
 [; ;main.c: 146:                     if(timepos < timeSize){
-[e $ ! < -> _timepos `i -> _timeSize `i 975  ]
+[e $ ! < -> _timepos `i -> _timeSize `i 971  ]
 {
 "147
 [; ;main.c: 147:                         rx_time[timepos]=rxData;
@@ -1508,13 +1483,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "149
 [; ;main.c: 149:                     }
 }
-[e :U 975 ]
+[e :U 971 ]
 "150
 [; ;main.c: 150:                 }else if(timepos > 0){
 }
-[e $U 976  ]
-[e :U 974 ]
-[e $ ! > -> _timepos `i -> 0 `i 977  ]
+[e $U 972  ]
+[e :U 970 ]
+[e $ ! > -> _timepos `i -> 0 `i 973  ]
 {
 "151
 [; ;main.c: 151:                  time_go=0;
@@ -1525,23 +1500,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "153
 [; ;main.c: 153:                 }
 }
-[e :U 977 ]
-[e :U 976 ]
+[e :U 973 ]
+[e :U 972 ]
 "154
 [; ;main.c: 154:             }
 }
-[e :U 973 ]
+[e :U 969 ]
 "157
 [; ;main.c: 157:             if(lat_go){
-[e $ ! != -> _lat_go `i -> 0 `i 978  ]
+[e $ ! != -> _lat_go `i -> 0 `i 974  ]
 {
 "158
 [; ;main.c: 158:                 if(rxData != ','){
-[e $ ! != -> _rxData `ui -> 44 `ui 979  ]
+[e $ ! != -> _rxData `ui -> 44 `ui 975  ]
 {
 "159
 [; ;main.c: 159:                     if(latpos < latSize){
-[e $ ! < -> _latpos `i -> _latSize `i 980  ]
+[e $ ! < -> _latpos `i -> _latSize `i 976  ]
 {
 "160
 [; ;main.c: 160:                         rx_lat[latpos]=rxData;
@@ -1552,13 +1527,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "162
 [; ;main.c: 162:      }
 }
-[e :U 980 ]
+[e :U 976 ]
 "163
 [; ;main.c: 163:                 }else if(latpos >0){
 }
-[e $U 981  ]
-[e :U 979 ]
-[e $ ! > -> _latpos `i -> 0 `i 982  ]
+[e $U 977  ]
+[e :U 975 ]
+[e $ ! > -> _latpos `i -> 0 `i 978  ]
 {
 "164
 [; ;main.c: 164:                     lat_go=0;
@@ -1569,23 +1544,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "166
 [; ;main.c: 166:                 }
 }
-[e :U 982 ]
-[e :U 981 ]
+[e :U 978 ]
+[e :U 977 ]
 "167
 [; ;main.c: 167:             }
 }
-[e :U 978 ]
+[e :U 974 ]
 "170
 [; ;main.c: 170:             if(ns_go){
-[e $ ! != -> _ns_go `i -> 0 `i 983  ]
+[e $ ! != -> _ns_go `i -> 0 `i 979  ]
 {
 "171
 [; ;main.c: 171:                 if(rxData != ','){
-[e $ ! != -> _rxData `ui -> 44 `ui 984  ]
+[e $ ! != -> _rxData `ui -> 44 `ui 980  ]
 {
 "172
 [; ;main.c: 172:                     if(nspos < nsSize){
-[e $ ! < -> _nspos `i -> _nsSize `i 985  ]
+[e $ ! < -> _nspos `i -> _nsSize `i 981  ]
 {
 "173
 [; ;main.c: 173:                         rx_ns=rxData;
@@ -1596,13 +1571,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "175
 [; ;main.c: 175:      }
 }
-[e :U 985 ]
+[e :U 981 ]
 "176
 [; ;main.c: 176:                 }else if(nspos >0){
 }
-[e $U 986  ]
-[e :U 984 ]
-[e $ ! > -> _nspos `i -> 0 `i 987  ]
+[e $U 982  ]
+[e :U 980 ]
+[e $ ! > -> _nspos `i -> 0 `i 983  ]
 {
 "177
 [; ;main.c: 177:      ns_go=0;
@@ -1613,23 +1588,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "179
 [; ;main.c: 179:                 }
 }
-[e :U 987 ]
-[e :U 986 ]
+[e :U 983 ]
+[e :U 982 ]
 "180
 [; ;main.c: 180:             }
 }
-[e :U 983 ]
+[e :U 979 ]
 "183
 [; ;main.c: 183:             if(long_go){
-[e $ ! != -> _long_go `i -> 0 `i 988  ]
+[e $ ! != -> _long_go `i -> 0 `i 984  ]
 {
 "184
 [; ;main.c: 184:                 if(rxData != ','){
-[e $ ! != -> _rxData `ui -> 44 `ui 989  ]
+[e $ ! != -> _rxData `ui -> 44 `ui 985  ]
 {
 "185
 [; ;main.c: 185:                     if(longpos < longSize){
-[e $ ! < -> _longpos `i -> _longSize `i 990  ]
+[e $ ! < -> _longpos `i -> _longSize `i 986  ]
 {
 "186
 [; ;main.c: 186:                         rx_long[longpos]=rxData;
@@ -1640,13 +1615,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "188
 [; ;main.c: 188:               }
 }
-[e :U 990 ]
+[e :U 986 ]
 "189
 [; ;main.c: 189:                 }else if(longpos > 0 ){
 }
-[e $U 991  ]
-[e :U 989 ]
-[e $ ! > -> _longpos `i -> 0 `i 992  ]
+[e $U 987  ]
+[e :U 985 ]
+[e $ ! > -> _longpos `i -> 0 `i 988  ]
 {
 "190
 [; ;main.c: 190:                     long_go=0;
@@ -1657,23 +1632,23 @@ Version 4.0 HI-TECH Software Intermediate Code
 "192
 [; ;main.c: 192:           }
 }
-[e :U 992 ]
-[e :U 991 ]
+[e :U 988 ]
+[e :U 987 ]
 "193
 [; ;main.c: 193:    }
 }
-[e :U 988 ]
+[e :U 984 ]
 "197
 [; ;main.c: 197:             if(ew_go){
-[e $ ! != -> _ew_go `i -> 0 `i 993  ]
+[e $ ! != -> _ew_go `i -> 0 `i 989  ]
 {
 "198
 [; ;main.c: 198:                 if(rxData != ','){
-[e $ ! != -> _rxData `ui -> 44 `ui 994  ]
+[e $ ! != -> _rxData `ui -> 44 `ui 990  ]
 {
 "199
 [; ;main.c: 199:                     if(ewpos < ewSize){
-[e $ ! < -> _ewpos `i -> _ewSize `i 995  ]
+[e $ ! < -> _ewpos `i -> _ewSize `i 991  ]
 {
 "200
 [; ;main.c: 200:                         rx_ew=rxData;
@@ -1684,13 +1659,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "202
 [; ;main.c: 202:                     }
 }
-[e :U 995 ]
+[e :U 991 ]
 "203
 [; ;main.c: 203:                 }else if(ewpos > 0){
 }
-[e $U 996  ]
-[e :U 994 ]
-[e $ ! > -> _ewpos `i -> 0 `i 997  ]
+[e $U 992  ]
+[e :U 990 ]
+[e $ ! > -> _ewpos `i -> 0 `i 993  ]
 {
 "204
 [; ;main.c: 204:                     ew_go=0;
@@ -1701,12 +1676,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "206
 [; ;main.c: 206:                 }
 }
-[e :U 997 ]
-[e :U 996 ]
+[e :U 993 ]
+[e :U 992 ]
 "207
 [; ;main.c: 207:             }
 }
-[e :U 993 ]
+[e :U 989 ]
 "208
 [; ;main.c: 208:             uartFlag = 0;
 [e = _uartFlag -> -> 0 `i `a ]

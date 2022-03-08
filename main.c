@@ -44,7 +44,7 @@ void main(void)
     volatile bool ns_go = false; 
     volatile bool ew_go = false; 
     
-    const unsigned char header_g[] = {"$GNGGA"}; 
+    const unsigned char header_g[] = {"$GPGGA"}; 
      
     for(int i=0; i < latSize ; i++){    
         rx_lat[i] = 0;  
